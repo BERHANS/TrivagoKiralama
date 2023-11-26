@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER} # bunun envirement variable ile bilgisayara tanımlanıp konulması önemlidir # http://localhost:8888
+  config:
+    import: "configserver:"
+  application:
+    name: gateway-application
